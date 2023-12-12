@@ -81,7 +81,7 @@ pipeline {
                                             snapshotValidationStatus = it.validation
 
                                             // Set path to snapshot validation results file
-                                            validationResultsPath = "${snapshotName}_${currentBuild.projectName}_${currentBuild.number}.xml"
+                                            validationResultsPath = "${snapshotName}*${currentBuild.number}.xml"
                                             // attach policy validation results
                                             junit testResults: "${validationResultsPath}", skipPublishingChecks: true
                                             
