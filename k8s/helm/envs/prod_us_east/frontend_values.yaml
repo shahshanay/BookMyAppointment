@@ -7,7 +7,7 @@ replicas: 10
 
 image:
   # CIS Control: Only Allow Access to Authorized Cloud Storage or Email Providers
-  registry: unkown.servicenow.io
+  registry: k8s.servicenow.io
   repository: bookmyapp
   tag: dev
   pullPolicy: Always
